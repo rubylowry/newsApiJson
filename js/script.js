@@ -2,6 +2,7 @@ console.log("newsApi");
 
 var myKey = JSON.parse(apiKey);
 myKey = myKey[0].key;
+console.log(myKey);
 
 // Function that auto fills broken images
 function backupImage(imageSource){
@@ -39,7 +40,7 @@ $(document).ready(function(){
                   success: function(news){
                     let output = "";
                     let latestNews = news.articles;
-
+                    console.log(news);
                          // Displays articles as cards
                          for(var i in latestNews){
                            output +=`
