@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Api</title>
+    <!-- <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h3 class="center" style="margin-bottom:20px;"> US News <i class="material-icons medium hide-on-small-only" id="icons"></i></h3>
+
+      <form>
+          <div class="input-field">
+              <i class="material-icons prefix">public</i>
+              <input type="text" id="searchquery">
+              <label>Discover what's happeing in America...</label>
+          </div>
+
+          <div class="row">
+             <input type="submit" id="searchbtn" class="btn col m2 s12" value="search">
+             <input type="reset" id="searchbtn" class="btn col m2 s12 red right" value="clear"  style="margin-top:3px;">
+          </div>
+
+      </form>
+
+      <div id="loader" style="display:none;">
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </div>
+
+      <div class="row">
+         <div id="newsResults"></div>
+      </div>
+
+   </div>
+
+   <!-- Imported JS -->
+   	<!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+   	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+   	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/iconChanger.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/config.json"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
